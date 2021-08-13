@@ -23,13 +23,13 @@ Commit your code regularly and meaningfully.
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe acessibility on the web to someone new to programming?
-   - Programming for accessibility on the web means writing code in such a way that it is responsive, and can be used to display content as-intended on a wide range of devices, from mobile phones to desktop computers, without any obvious bugs or UI/UX oversights that hinder others from easily accessing your content. Even more importantly, it also means making sure that people with disabilities are not excluded from accessing your content, either. Write your code semantically so screen readers can parse your content as it was intended to be read by everyone else, and try to use colorblind-friendly colors/add symbols to important fields to make things obviously indicative of their purpose. Don't go overboard and blast audio by-default, either, and try to add subtitles to video content to help people with hearing disabilities, too.
+   - Programming for accessibility on the web means writing code in such a way that everyone can, quite literally, access it as it was intended. It means making sure that people with disabilities are not excluded from accessing your content, either. When you write your code semantically, you help screen readers parse your content correctly, helping the visually impaired. Trying to use colorblind-friendly colors and addding symbols to important fields, to make things obviously indicative of their purpose, also helps big-time, as does adding subtitles to video content, too.
 2. Talk about 3 different things you can do to ensure your website is accessible.
-   - Add symbols to important fields for people with colorblindness, add subtitles to video content to help people with hearing problems, and write your HTML semantically so screen readers can parse your content, properly.
+   - Add symbols to important fields for people with colorblindness, add alt tags to images, add subtitles to video content to help people with hearing problems, and write your HTML semantically so screen readers can parse your content, properly.
 3. How would you explain the concept of a variable to someone new to programming?
    - A variable is like a container; you can label it, put things inside, then open it up later when you need to either use what's inside or replace its contents.
 4. What is the purpose of using functions in code?
-   - Functions let us create step-by-step "actions" that can be reused as many times as needed later in our program. You can feed arguments into their parameters to get different outputs, and/or to abstract chunks of code to simplify your program.
+   - Functions let us create a step-by-step list of "actions" for a "recipe" that can be reused as many times as needed later in our program. They are really useful for abstracting chunks of programming so we can simplify our code to make its purpose clearer and future edits easier. You can feed arguments into a function's parameters to get different outputs depending on your desired use-case, too; they help us keep our code DRY.
 5. How do you access a key inside of an object inside of an array?
    - You'd type in the following format: `arrayToCheck[indexOfObject].keyToAccess`.
 
