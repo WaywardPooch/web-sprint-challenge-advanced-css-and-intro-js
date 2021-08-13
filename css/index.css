@@ -217,7 +217,7 @@ button:hover {
   width: 75%;
 }
 .artist img {
-  max-height: 35vh;
+  max-height: 35%;
   width: 70%;
 }
 .artist a {
@@ -233,6 +233,9 @@ button:hover {
     flex-direction: column;
     margin-bottom: 20%;
     margin-top: 4%;
+  }
+  .artist img {
+    height: auto;
   }
 }
 
