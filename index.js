@@ -216,7 +216,11 @@ console.log("Task 1: Third Artist Bio:", artists[2].bio);
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
+
+// Reassign the name key in the object at index 8 of the artists array
 artists[8].name = "Vincent Van Gogh";
+
+// Check if the name change worked
 console.log("Task 2: Renamed Vincent --", artists[8].name);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
@@ -228,8 +232,10 @@ Use getArtistByIndex to do the following:
 Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
 function getArtistByIndex(artistArray, index) {
+  // Use template literals to return the name of the artist at the desired index
   return `the artist at index ${index} is ${artistArray[index].name}`;
 }
+// Check to see if the function can get the name of the first artist
 console.log("Task 3:", getArtistByIndex(artists, 0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -249,7 +255,7 @@ function get20s(artistArray) {
   let yearDied;
   // Check each item in the array to filter
   for (let i = 0; i < artistArray.length; i++) {
-    // Calculate the era of the artist at the current index
+    // Separate the 'era' of the artist at the current index
     years = artistArray[i].years.split(" - ");
     yearBorn = parseInt(years[0]);
     yearDied = parseInt(years[1]);
@@ -274,7 +280,7 @@ Use removeArtist to do the following:
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 // I understand that this function will not modify the real list of artists, as it
-// is editing a copy of the array; this is so Amedeo shows up in the last problem
+// is editing a copy of the array; this is so Amedeo shows up in the last problem.
 function removeArtist(artistArray, removeIndex) {
   // Create a copy of the artist array
   const removeArtistArray = [...artistArray];
