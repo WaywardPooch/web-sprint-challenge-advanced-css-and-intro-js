@@ -241,9 +241,28 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s(/*Your Code Here*/) {
-  /*Your Code Here*/
+function get20s(artistArray) {
+  // Initialize empty variables to store filtered results
+  const artistsIn1900s = [];
+  let years;
+  let yearBorn;
+  let yearDied;
+  // Check each item in the array to filter
+  for (let i = 0; i < artistArray.length; i++) {
+    // Calculate the era of the artist at the current index
+    years = artistArray[i].years.split(" - ");
+    yearBorn = parseInt(years[0]);
+    yearDied = parseInt(years[1]);
+    // If they were from only 1900s, add them to the new array
+    if (yearBorn >= 1900 && yearDied < 2000) {
+      artistsIn1900s.push(artistArray[i].name);
+    }
+  }
+  // Return the filtered results
+  return artistsIn1900s;
 }
+// Test the function
+console.log("Task 4: Artists in the 1900s...", get20s(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:
