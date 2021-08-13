@@ -273,11 +273,15 @@ Use removeArtist to do the following:
 
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
+// I understand that this function will not modify the real list of artists, as it
+// is editing a copy of the array; this is so Amedeo shows up in the last problem
 function removeArtist(artistArray, removeIndex) {
+  // Create a copy of the artist array
+  const removeArtistArray = [...artistArray];
   // Remove one artist from the array at the given index
-  artistArray.splice(removeIndex, 1);
+  removeArtistArray.splice(removeIndex, 1);
   // Return the length of the new array
-  return artistArray.length;
+  return removeArtistArray.length;
 }
 // Test the function
 console.log(
@@ -327,9 +331,22 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(artistsArray) {
-  return;
+function lotsOfArt(artistArray) {
+  // Create an empty array to store filtered results
+  const artistsWithOver100Paintings = [];
+  // Look at each artist in the artists array
+  for (let i = 0; i < artistArray.length; i++) {
+    // If the number of paintings is higher than 100...
+    if (artistArray[i].paintings > 100) {
+      // Add them to the filtered list
+      artistsWithOver100Paintings.push(artistArray[i].name);
+    }
+  }
+  // Return the filtered list
+  return artistsWithOver100Paintings;
 }
+// Test the function
+console.log("Task 7: Artists with over 100 paintings:", lotsOfArt(artists));
 
 /* ***** END OF TASKS ***** */
 
