@@ -303,9 +303,24 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+// It seems the question is asking for a hard-coded solution, so that's what I'll do...
+function addArtist(artistArray) {
+  // Create new artist object
+  const artistToAdd = {
+    id: 20,
+    name: "Lance",
+    years: "2000 - 2021",
+    genre: "Web Design",
+    nationality: "American",
+    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  };
+  // Add artist object to the end of the new array
+  artistArray.push(artistToAdd);
+  // Return the new array
+  return artistArray;
 }
+// Test the function
+console.log("Task 6: Artist array with self added:", addArtist(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
@@ -314,8 +329,8 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/) {
-  /*Your Code Here*/
+function lotsOfArt(artistsArray) {
+  return;
 }
 
 /* ***** END OF TASKS ***** */
