@@ -99,6 +99,8 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
+  margin: auto;
+  max-width: 1200px;
 }
 h1,
 p,
@@ -155,8 +157,7 @@ nav a {
 }
 nav span {
   border-left: 3px solid #626262;
-  /* Hard-Coded the pixel spacing below to keep the nav spacing consistent between platforms, as in the reference design */
-  margin: 0 12px;
+  margin: 0 5%;
 }
 /*Title Section Styles*/
 .title-container {
@@ -188,8 +189,7 @@ button {
   box-shadow: 2px 2px 1px #626262;
   font-family: "Raleway", sans-serif;
   font-size: 1.8rem;
-  /* Hard Coded Padding Intentionally to match the reference design */
-  padding: 10px 30px;
+  padding: 1.5% 4.5%;
   transition: 2s;
 }
 button:hover {
@@ -218,11 +218,13 @@ button:hover {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 800px) {
-  .title-container div {
+@media (max-width: 768px) {
+  .title-container div,
+  .title-container hr {
     width: 100%;
   }
   .artists-container {
     flex-direction: column;
+    align-items: center;
   }
 }
