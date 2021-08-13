@@ -86,10 +86,6 @@ video {
   padding: 0;
   vertical-align: baseline;
 }
-/* UNIVERSAL SELECTOR */
-* {
-  /* border: solid 1px grey; */
-}
 
 /* GENERAL STYLES */
 html {
@@ -151,8 +147,8 @@ header {
 nav {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 5%;
   line-height: 1.1;
+  margin-top: 5%;
 }
 nav a {
   color: #626262;
@@ -207,6 +203,7 @@ button:hover {
 .artists-container {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 10%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1.2%;
@@ -230,8 +227,8 @@ button:hover {
 /* MEDIA QUERIES */
 @media (max-width: 800px) {
   header {
-    margin: 2% 0;
     align-items: center;
+    margin: 2% 0;
   }
   .title-container div,
   .title-container hr {
@@ -241,8 +238,8 @@ button:hover {
     padding: 0;
   }
   .artists-container {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
     margin-bottom: 20%;
     margin-top: 4%;
   }
